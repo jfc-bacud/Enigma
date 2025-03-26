@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Enigma"
         mc:Ignorable="d"
-        Title="Configure" Height="450" Width="500" WindowStartupLocation="CenterScreen">
+        Title="Configure" Height="450" Width="500" Top="275" Left="1100" WindowStyle="None" ResizeMode="NoResize"
+>
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/background.jpg"/>

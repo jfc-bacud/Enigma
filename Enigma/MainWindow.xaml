@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Enigma"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="950" ResizeMode="NoResize" KeyDown="Window_KeyDown" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="500" Width="950" ResizeMode="NoResize" KeyDown="Window_KeyDown" Top="250" Left="150" Closing="MainWindow_Closing"
+    >
 
     <Grid x:Name="Grid">
         <Grid.Background>

@@ -35,6 +35,9 @@ namespace Enigma
         {
             InitializeComponent();
             SetDefaults();
+
+            LockRotors.IsEnabled = false;
+            rotor = false;
         }
         public void DisplayRings()
         {
@@ -58,9 +61,7 @@ namespace Enigma
             ring3 = "UQNTLSZFMREHDPXKIBVYGJCWOA";
             string reflector = "YRUHQSLDPXNGOKMIEBFZCWVJAT";
             _keyOffset = new int[] { 0, 0, 0 };
-            rotor = false;
             _plugboardSet = false;
-            LockRotors.IsEnabled = false;
 
             DisplayRing(lblControlRing, control);
             DisplayRing(lblRotor1, ring1);
@@ -113,6 +114,8 @@ namespace Enigma
                     Rotor2Modify.IsEnabled = false;
                     Rotor3Modify.IsEnabled = false;
                     rotor = true;
+                    LockRotors.IsEnabled = false;
+                    
 
                     ring1 = InitializeRotors(_initOffset[0], ring1);
                     ring2 = InitializeRotors(_initOffset[1], ring2);
@@ -123,6 +126,10 @@ namespace Enigma
                     DisplayRing(lblRotor3, ring3);
                     DisplayOffset();
                 }
+            }
+            else
+            {
+                MessageBox.Show("A field has invalid characters!");
             }
         }
         private void DisplayOffset()
@@ -320,6 +327,8 @@ namespace Enigma
                 temp += rotor + "\t";
             displayLabel.Content = temp;
         }
+
+
 
 
         #region Decor
