@@ -55,11 +55,11 @@ namespace Enigma
         }
         private void SetDefaults()
         {
-            control = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+          control = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             ring1 = "DMTWSILRUYQNKFEJCAZBPGXOHV";
             ring2 = "HQZGPJTMOBLNCIFDYAWVEUSRKX";
             ring3 = "UQNTLSZFMREHDPXKIBVYGJCWOA";
-            string reflector = "YRUHQSLDPXNGOKMIEBFZCWVJAT";
+ string reflector = "YRUHQSLDPXNGOKMIEBFZCWVJAT";
             _keyOffset = new int[] { 0, 0, 0 };
             _plugboardSet = false;
 
